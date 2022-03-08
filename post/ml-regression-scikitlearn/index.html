@@ -5,11 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>About Me | Bryan&#39;s Blog</title>
+<title>Machine Learning Regression Implementation with SciKit Learn | Bryan&#39;s Blog</title>
 <meta name="keywords" content="" />
-<meta name="description" content="You weren’t supposed to see this :)">
-<meta name="author" content="">
-<link rel="canonical" href="https://brvlncia.github.io/about/" />
+<meta name="description" content="ScitKitLearn Simple Linear Regression Implementation with Sample DatasetI load in the necessary libraries.
+import pandas as pdfrom sklearn import model_selection, linear_modelI read my dataset in with pandas and define my features.
+df = pd.read_csv(&#39;dataset.csv&#39;)features = [&#39;col0&#39;,&#39;col1&#39;,&#39;col2&#39;,&#39;col3&#39;,&#39;col4&#39;,&#39;col5&#39;,&#39;col6&#39;,&#39;col7&#39;,&#39;col8&#39;,&#39;col9&#39;,&#39;col10&#39;]I define my model and set an X and y variable to set up cross-validation.
+model = linear_model.LinearRegression()X = df[features]y = df.labelxval = model_selection.KFold(10, shuffle=True)results = model_selection.">
+<meta name="author" content="Bryan Valencia">
+<link rel="canonical" href="https://brvlncia.github.io/post/ml-regression-scikitlearn/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.5588e98c9d3a6e9570e5cb056041adb483a1688ac8a4ff398112f3892473dde1.css" integrity="sha256-VYjpjJ06bpVw5csFYEGttIOhaIrIpP85gRLziSRz3eE=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js" integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -56,16 +59,22 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="About Me" />
-<meta property="og:description" content="You weren’t supposed to see this :)" />
+</noscript><meta property="og:title" content="Machine Learning Regression Implementation with SciKit Learn" />
+<meta property="og:description" content="ScitKitLearn Simple Linear Regression Implementation with Sample DatasetI load in the necessary libraries.
+import pandas as pdfrom sklearn import model_selection, linear_modelI read my dataset in with pandas and define my features.
+df = pd.read_csv(&#39;dataset.csv&#39;)features = [&#39;col0&#39;,&#39;col1&#39;,&#39;col2&#39;,&#39;col3&#39;,&#39;col4&#39;,&#39;col5&#39;,&#39;col6&#39;,&#39;col7&#39;,&#39;col8&#39;,&#39;col9&#39;,&#39;col10&#39;]I define my model and set an X and y variable to set up cross-validation.
+model = linear_model.LinearRegression()X = df[features]y = df.labelxval = model_selection.KFold(10, shuffle=True)results = model_selection." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://brvlncia.github.io/about/" /><meta property="article:section" content="" />
-
-
+<meta property="og:url" content="https://brvlncia.github.io/post/ml-regression-scikitlearn/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-03-08T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-03-08T00:00:00&#43;00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="About Me"/>
-<meta name="twitter:description" content="You weren’t supposed to see this :)"/>
+<meta name="twitter:title" content="Machine Learning Regression Implementation with SciKit Learn"/>
+<meta name="twitter:description" content="ScitKitLearn Simple Linear Regression Implementation with Sample DatasetI load in the necessary libraries.
+import pandas as pdfrom sklearn import model_selection, linear_modelI read my dataset in with pandas and define my features.
+df = pd.read_csv(&#39;dataset.csv&#39;)features = [&#39;col0&#39;,&#39;col1&#39;,&#39;col2&#39;,&#39;col3&#39;,&#39;col4&#39;,&#39;col5&#39;,&#39;col6&#39;,&#39;col7&#39;,&#39;col8&#39;,&#39;col9&#39;,&#39;col10&#39;]I define my model and set an X and y variable to set up cross-validation.
+model = linear_model.LinearRegression()X = df[features]y = df.labelxval = model_selection.KFold(10, shuffle=True)results = model_selection."/>
 
 
 <script type="application/ld+json">
@@ -76,8 +85,14 @@
     {
       "@type": "ListItem",
       "position":  1 ,
-      "name": "About Me",
-      "item": "https://brvlncia.github.io/about/"
+      "name": "Posts",
+      "item": "https://brvlncia.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Machine Learning Regression Implementation with SciKit Learn",
+      "item": "https://brvlncia.github.io/post/ml-regression-scikitlearn/"
     }
   ]
 }
@@ -86,20 +101,24 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "About Me",
-  "name": "About Me",
-  "description": "\r\rYou weren’t supposed to see this :)\r\r",
+  "headline": "Machine Learning Regression Implementation with SciKit Learn",
+  "name": "Machine Learning Regression Implementation with SciKit Learn",
+  "description": "ScitKitLearn Simple Linear Regression Implementation with Sample Dataset\rI load in the necessary libraries.\n\rimport pandas as pd\rfrom sklearn import model_selection, linear_model\rI read my dataset in with pandas and define my features.\ndf = pd.read_csv(\u0026#39;dataset.csv\u0026#39;)\rfeatures = [\u0026#39;col0\u0026#39;,\u0026#39;col1\u0026#39;,\u0026#39;col2\u0026#39;,\u0026#39;col3\u0026#39;,\u0026#39;col4\u0026#39;,\u0026#39;col5\u0026#39;,\u0026#39;col6\u0026#39;,\u0026#39;col7\u0026#39;,\u0026#39;col8\u0026#39;,\u0026#39;col9\u0026#39;,\u0026#39;col10\u0026#39;]\rI define my model and set an X and y variable to set up cross-validation.\nmodel = linear_model.LinearRegression()\rX = df[features]\ry = df.label\rxval = model_selection.KFold(10, shuffle=True)\rresults = model_selection.",
   "keywords": [
     
   ],
-  "articleBody": "\r\rYou weren’t supposed to see this :)\r\r",
-  "wordCount" : "7",
+  "articleBody": "\r\rScitKitLearn Simple Linear Regression Implementation with Sample Dataset\rI load in the necessary libraries.\n\rimport pandas as pd\rfrom sklearn import model_selection, linear_model\rI read my dataset in with pandas and define my features.\ndf = pd.read_csv('dataset.csv')\rfeatures = ['col0','col1','col2','col3','col4','col5','col6','col7','col8','col9','col10']\rI define my model and set an X and y variable to set up cross-validation.\nmodel = linear_model.LinearRegression()\rX = df[features]\ry = df.label\rxval = model_selection.KFold(10, shuffle=True)\rresults = model_selection.cross_validate(model, X, y, cv=xval, scoring='r2', return_train_score=True)\rI calculate mean R^2 and standard deviation.\ntrain_r2 = results['train_score'].mean()\rtrain_r2_sd = results['train_score'].std()\rtest_r2 = results['test_score'].mean()\rtest_r2_sd = results['test_score'].std()\r\r",
+  "wordCount" : "95",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "datePublished": "2022-03-08T00:00:00Z",
+  "dateModified": "2022-03-08T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Bryan Valencia"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://brvlncia.github.io/about/"
+    "@id": "https://brvlncia.github.io/post/ml-regression-scikitlearn/"
   },
   "publisher": {
     "@type": "Organization",
@@ -170,20 +189,39 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://brvlncia.github.io/">Home</a></div>
+    <div class="breadcrumbs"><a href="https://brvlncia.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://brvlncia.github.io/post/">Posts</a></div>
     <h1 class="post-title">
-      About Me
+      Machine Learning Regression Implementation with SciKit Learn
     </h1>
-    <div class="post-meta">1 min
+    <div class="post-meta"><span title='2022-03-08 00:00:00 +0000 UTC'>March 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Bryan Valencia
 
 </div>
   </header> 
   <div class="post-content">
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="https://brvlncia.github.io/post/ml-regression-scikitlearn/index_files/header-attrs/header-attrs.js"></script>
 
 
-<div id="you-werent-supposed-to-see-this" class="section level1">
-<h1><u><strong><em>You weren’t supposed to see this :)</em></strong></u></h1>
+<div id="scitkitlearn-simple-linear-regression-implementation-with-sample-dataset" class="section level1">
+<h1>ScitKitLearn Simple Linear Regression Implementation with Sample Dataset</h1>
+<p>I load in the necessary libraries.</p>
+<pre class="python"><code>
+import pandas as pd
+from sklearn import model_selection, linear_model</code></pre>
+<p>I read my dataset in with pandas and define my features.</p>
+<pre class="python"><code>df = pd.read_csv(&#39;dataset.csv&#39;)
+features = [&#39;col0&#39;,&#39;col1&#39;,&#39;col2&#39;,&#39;col3&#39;,&#39;col4&#39;,&#39;col5&#39;,&#39;col6&#39;,&#39;col7&#39;,&#39;col8&#39;,&#39;col9&#39;,&#39;col10&#39;]</code></pre>
+<p>I define my model and set an X and y variable to set up cross-validation.</p>
+<pre class="python"><code>model = linear_model.LinearRegression()
+X = df[features]
+y = df.label
+
+xval = model_selection.KFold(10, shuffle=True)
+results = model_selection.cross_validate(model, X, y, cv=xval, scoring=&#39;r2&#39;, return_train_score=True)</code></pre>
+<p>I calculate mean R^2 and standard deviation.</p>
+<pre class="python"><code>train_r2 = results[&#39;train_score&#39;].mean()
+train_r2_sd = results[&#39;train_score&#39;].std()
+test_r2 = results[&#39;test_score&#39;].mean()
+test_r2_sd = results[&#39;test_score&#39;].std()</code></pre>
 </div>
 
 

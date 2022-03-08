@@ -6,14 +6,27 @@
     <description>Recent content on Bryan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://brvlncia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://brvlncia.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>getting started with blogdown</title>
-      <link>https://brvlncia.github.io/post/getting-started-with-blogdown/</link>
-      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Machine Learning Regression Implementation with SciKit Learn</title>
+      <link>https://brvlncia.github.io/post/ml-regression-scikitlearn/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://brvlncia.github.io/post/getting-started-with-blogdown/</guid>
-      <description></description>
+      <guid>https://brvlncia.github.io/post/ml-regression-scikitlearn/</guid>
+      <description>ScitKitLearn Simple Linear Regression Implementation with Sample DatasetI load in the necessary libraries.
+import pandas as pdfrom sklearn import model_selection, linear_modelI read my dataset in with pandas and define my features.
+df = pd.read_csv(&amp;#39;dataset.csv&amp;#39;)features = [&amp;#39;col0&amp;#39;,&amp;#39;col1&amp;#39;,&amp;#39;col2&amp;#39;,&amp;#39;col3&amp;#39;,&amp;#39;col4&amp;#39;,&amp;#39;col5&amp;#39;,&amp;#39;col6&amp;#39;,&amp;#39;col7&amp;#39;,&amp;#39;col8&amp;#39;,&amp;#39;col9&amp;#39;,&amp;#39;col10&amp;#39;]I define my model and set an X and y variable to set up cross-validation.
+model = linear_model.LinearRegression()X = df[features]y = df.labelxval = model_selection.KFold(10, shuffle=True)results = model_selection.</description>
+    </item>
+    
+    <item>
+      <title>Regular Show IMDB Web Scrape and Data Analysis</title>
+      <link>https://brvlncia.github.io/post/regular-show-analysis/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://brvlncia.github.io/post/regular-show-analysis/</guid>
+      <description>Today I will be scraping Regular Show’s IMDB page. I will compare the ratings of every other season for a total of 4 seasons.
+Season 1 Ratings Scrape:s1_page &amp;lt;- read_html(&amp;quot;https://www.imdb.com/title/tt1710308/episodes?season=1&amp;quot;)s1_title &amp;lt;- s1_page %&amp;gt;% html_nodes(&amp;quot;#episodes_content strong a&amp;quot;) %&amp;gt;% html_text()s1_stars &amp;lt;- s1_page %&amp;gt;% html_nodes(&amp;quot;.ipl-rating-star.small .ipl-rating-star__rating&amp;quot;) %&amp;gt;% html_text() %&amp;gt;% as.numeric()Season 3 Ratings Scrape:s3_page &amp;lt;- read_html(&amp;quot;https://www.imdb.com/title/tt1710308/episodes?season=3&amp;quot;)s3_title &amp;lt;- s3_page %&amp;gt;% html_nodes(&amp;quot;#episodes_content strong a&amp;quot;) %&amp;gt;% html_text()s3_stars &amp;lt;- s3_page %&amp;gt;% html_nodes(&amp;quot;.</description>
     </item>
     
     <item>
@@ -22,8 +35,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://brvlncia.github.io/about/</guid>
-      <description></description>
+      <description>You weren’t supposed to see this :)</description>
     </item>
+    
     
   </channel>
 </rss>
