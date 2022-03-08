@@ -38,6 +38,15 @@ Season 1 Ratings Scrape:s1_page &amp;lt;- read_html(&amp;quot;https://www.imdb.
       <description>You weren’t supposed to see this :)</description>
     </item>
     
+    <item>
+      <title>Resume</title>
+      <link>https://brvlncia.github.io/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brvlncia.github.io/resume/</guid>
+      <description>Undergraduate studentSkillsProgramming languagesPython, R, MySQLOperating systemsLinux, WindowsNatural languagesEnglish, SpanishEducationUniversity of Illinois Urbana-ChampaignB.Sc. in Information Sciences, Focus on Data Analytics / Data Science August 2019 – May 2023ExperienceInstitute for Genomic BiologyUndergraduate Research Assistant August 2020 – March 2021Relevant CourseworkPrivacy and Information TechnologyIntroduction to Data Science (R)Programming for Information Problems (Python)Introduction to Database Technology Concepts and Architecture (MySQL)</description>
+    </item>
+    
     
   </channel>
 </rss>
